@@ -1,0 +1,172 @@
+/* Reset and Base Styles */
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  
+  *,
+  :after,
+  :before {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-image: url('/img/icecreamcone.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  /* Mobile styles */
+@media (max-width: 767px) {
+  body {
+    background-image: url('/img/icecreamcone.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+  
+  /* Logo */
+  .logo {
+    width: 250px;
+    padding: 5px 10px 5px;
+  }
+  
+  /* Links */
+  a {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto 15px;
+    padding: 15px 20px;
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(3, 3, 3);
+    font-family: sans-serif;
+  }
+  
+  a:hover {
+    background-color: #fffdd0;;
+    color: #000000;
+    font-family: sans-serif;
+  }
+  
+  /* Featured Link */
+  a.featured {
+    background-color: #ffffff;;
+    position: relative;
+    color: #000000f6;
+    font-weight: 800;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    font-family: sans-serif;
+  }
+
+  a.featured:hover {
+    background-color: #000000;;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+
+  
+  a.featured:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid #000000;
+    border-radius: 10px;
+  }
+  
+  /* Headings */
+  h1 {
+    margin-top: 2px;  
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #000000;
+    font-family: sans-serif;
+  }
+  
+
+  h2 {
+    font-size: 12px;
+    text-transform: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 15px;
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  /* Channels */
+  .channels {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .channels a {
+    flex: 1;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border: none;
+  }
+  
+  .channels a:last-child {
+    margin-right: 0;
+  }
+  
+  .channels a:hover {
+    text-decoration: underline;
+  }
+  
+  .black-background {
+    display: block;
+    max-width: 500px;
+    background-color: black;
+    border-radius: 10px;
+    color: #fffffff6;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0 auto 15px;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+
+  .white-background {
+    display: block;
+    max-width: 250px;
+    background-color: black;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0 auto 15px;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+
